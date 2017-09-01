@@ -9,8 +9,10 @@
 #import "ViewController.h"
 #import "YjLineGenericChart.h"
 #import "YjLineChartItem.h"
+#import "YjBarChart.h"
 @interface ViewController ()
 @property (nonatomic, strong) YjLineGenericChart *lineChart;
+@property (nonatomic, strong) YjBarChart *barChart;
 @end
 
 @implementation ViewController
@@ -24,17 +26,39 @@
         [self.lineChart removeFromSuperview];
     }
     self.lineChart = [[YjLineGenericChart alloc] initWithFrame:CGRectMake(10, 100, 400, 300)];
-    _lineChart.backgroundColor = [UIColor whiteColor];
     _lineChart.layer.borderColor = [UIColor orangeColor].CGColor;
     _lineChart.layer.borderWidth = 1.0f;
     [self.view addSubview:_lineChart];
-    NSArray *yLables = @[@"0\nmin",@"10\nmin",@"20\nmin",@"30\nmin",@"40\nmin"];
-    NSArray *xLables = @[@"10日",@"11日",@"12日",@"13日",@"14日",@"15日",@"16日",@"17日",@"18日",@"19日"];
-    _lineChart.pointData = @[@20,@10,@30.5,@5,@10,@40,@25.567,@8,@33,@15];
-    _lineChart.xAxisLables = xLables;
-    _lineChart.yAxisLables = yLables;
-    _lineChart.dataTitle = @"YjAdair";
+    _lineChart.xAxisLables = @[@"10日",@"11日",@"12日",@"13日",@"14日",@"15日",@"16日",@"17日",@"18日",@"19日"];
+    _lineChart.yAxisLables = @[@"0\nmin",@"10\nmin",@"20\nmin",@"30\nmin",@"40\nmin"];
+    _lineChart.yAxisMaxValue = 40.f;
+    _lineChart.yAxisMinValue = 0.f;
+    
+    YjLineChartItem *chartItem1 = [[YjLineChartItem alloc] init];
+    chartItem1.pointData = @[@20,@10,@30.5,@5,@10,@40,@25.567,@8,@33,@15];
+    chartItem1.dataTitle = @"YjAdair";
+    chartItem1.showPointLable = NO;
+    YjLineChartItem *chartItem2 = [[YjLineChartItem alloc] init];
+    chartItem2.pointData = @[@30,@15,@5,@15,@0,@35,@38,@22,@30,@30];
+    chartItem2.dataTitle = @"Stark";
+    chartItem2.pathColor = [UIColor orangeColor];
+    chartItem2.pointColor = [UIColor orangeColor];
+    chartItem2.showPointLable = NO;
+    YjLineChartItem *chartItem3 = [[YjLineChartItem alloc] init];
+    chartItem3.pointData = @[@0,@26,@40,@40,@35,@35,@33,@11,@13.5,@0];
+    chartItem3.dataTitle = @"Snow";
+    chartItem3.pathColor = [UIColor purpleColor];
+    chartItem3.pointColor = [UIColor purpleColor];
+    chartItem3.showPointLable = NO;
+    _lineChart.chartData = @[chartItem1,chartItem2,chartItem3];
     [_lineChart strokeChart];
+    
+    self.barChart = [[YjBarChart alloc] initWithFrame:CGRectMake(10, 450, 400, 200)];
+    _barChart.layer.borderColor = [UIColor orangeColor].CGColor;
+    _barChart.layer.borderWidth = 1.0f;
+    _barChart.yAxisLables = @[@"0\nmin",@"10\nmin",@"20\nmin",@"30\nmin",@"40\nmin"];
+    [self.view addSubview:_barChart];
+    [_barChart strokeChart];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -44,9 +68,19 @@
 //    }else {
 //        _lineChart.chartMargin = YjChartMarginMake(25, 25, 25, 25);
 //    }
-//     [_lineChart strokeChart];
     
-    _lineChart.lineColor = [UIColor orangeColor];
+    self.lineChart.frame = CGRectMake(10, 100, 300, 200);
+    [self.lineChart strokeChart];
+//    self.lineChart.chartData.lastObject.pointData = @[@20,@10,@30.5,@5,@10,@40,@25.567,@8,@33,@15];
+//    [_lineChart updateChartDataWithChartItem:self.lineChart.chartData.lastObject];
+    
+//    NSArray *pathColors = @[[UIColor purpleColor],[UIColor brownColor],[UIColor blueColor]];
+//    for (NSInteger index = 0; index < self.lineChart.chartData.count;index++ ) {
+//        YjLineChartItem *chartItem = self.lineChart.chartData[index];
+//        chartItem.pathColor = pathColors[index];
+//        chartItem.pointColor = pathColors[index];
+//    }
+//    [_lineChart strokeChart];
     
 //    if (_lineChart.pointColor == [UIColor orangeColor]) {
 //        _lineChart.pointColor = [UIColor blackColor];

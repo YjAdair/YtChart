@@ -18,21 +18,15 @@ typedef struct {
 @property (nonatomic, copy) NSArray *xAxisLables;
 /** y轴文本 **/
 @property (nonatomic, copy) NSArray *yAxisLables;
-/** 元数据 **/
-@property (nonatomic, copy) NSArray *pointData;
-/** 元数据标题 **/
-@property (nonatomic, copy) NSString *dataTitle;
+/** y轴最大值 **/
+@property (nonatomic, assign) CGFloat yAxisMaxValue;
+/** y轴最小值 **/
+@property (nonatomic, assign) CGFloat yAxisMinValue;
 /** 坐标轴距离视图的间距 **/
 @property (nonatomic) YjLineChartMargin chartMargin;
+/** chartData **/
+@property (nonatomic, copy) NSArray<YjLineChartItem *> *chartData;
 /********************** Color **************************/
-/** lineColor **/
-@property (nonatomic, strong) UIColor *lineColor;
-/** pointColor全局设置 **/
-@property (nonatomic, strong) UIColor *pointColor;
-/** pointColor集合 **/
-@property (nonatomic, copy) NSArray<UIColor *> *pointColors;
-/** point文本颜色 **/
-@property (nonatomic, strong) UIColor *pointLabelColor;
 /** x轴文本颜色 **/
 @property (nonatomic, strong) UIColor *xAxisLablesColor;
 /** y轴文本颜色 **/
@@ -42,11 +36,12 @@ typedef struct {
 /** y轴颜色 **/
 @property (nonatomic, strong) UIColor *yAxisColor;
 /********************** ViewControl **************************/
-/** 是否展示x轴上的网格 **/
+/** 是否展示x轴上的网格 默认YES**/
 @property (nonatomic, assign) BOOL showXGridLine;
-/** 是否展示y轴上的网格 **/
+/** 是否展示y轴上的网格 默认YES**/
 @property (nonatomic, assign) BOOL showYGridLine;
 /********************** Function **************************/
 - (void)strokeChart;
+- (void)updateChartDataWithChartItem:(YjLineChartItem *)chartItem;
 extern YjLineChartMargin YjChartMarginMake(CGFloat left, CGFloat top, CGFloat right, CGFloat bottom);
 @end
