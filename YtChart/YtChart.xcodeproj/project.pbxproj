@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F87F895E1F3DA92900BDB6CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F87F895D1F3DA92900BDB6CE /* main.m */; };
+		F87F89611F3DA92900BDB6CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F87F89601F3DA92900BDB6CE /* AppDelegate.m */; };
+		F87F89641F3DA92900BDB6CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87F89631F3DA92900BDB6CE /* ViewController.m */; };
+		F87F89671F3DA92900BDB6CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87F89651F3DA92900BDB6CE /* Main.storyboard */; };
+		F87F89691F3DA92A00BDB6CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F87F89681F3DA92A00BDB6CE /* Assets.xcassets */; };
+		F87F896C1F3DA92A00BDB6CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87F896A1F3DA92A00BDB6CE /* LaunchScreen.storyboard */; };
+		F87F89771F3DA92A00BDB6CE /* YtChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F87F89761F3DA92A00BDB6CE /* YtChartTests.m */; };
+		F87F89821F3DA92A00BDB6CE /* YtChartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F87F89811F3DA92A00BDB6CE /* YtChartUITests.m */; };
+		F87F89911F3DACEC00BDB6CE /* YTPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = F87F89901F3DACEC00BDB6CE /* YTPieChart.m */; };
+		F87F89941F3DAED400BDB6CE /* YTPieChartItemData.m in Sources */ = {isa = PBXBuildFile; fileRef = F87F89931F3DAED400BDB6CE /* YTPieChartItemData.m */; };
+		F88FB4BB1F5563E300E45FDC /* YjLineGenericChart.m in Sources */ = {isa = PBXBuildFile; fileRef = F88FB4BA1F5563E300E45FDC /* YjLineGenericChart.m */; };
+		F88FB4BE1F56625B00E45FDC /* YjLineChartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F88FB4BD1F56625B00E45FDC /* YjLineChartItem.m */; };
+		F88FB4C11F57F4DC00E45FDC /* YjChartColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F88FB4C01F57F4DC00E45FDC /* YjChartColor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F87F89731F3DA92A00BDB6CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F87F89511F3DA92900BDB6CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F87F89581F3DA92900BDB6CE;
+			remoteInfo = YtChart;
+		};
+		F87F897E1F3DA92A00BDB6CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F87F89511F3DA92900BDB6CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F87F89581F3DA92900BDB6CE;
+			remoteInfo = YtChart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F87F89591F3DA92900BDB6CE /* YtChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YtChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87F895D1F3DA92900BDB6CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F87F895F1F3DA92900BDB6CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F87F89601F3DA92900BDB6CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F87F89621F3DA92900BDB6CE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F87F89631F3DA92900BDB6CE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F87F89661F3DA92900BDB6CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F87F89681F3DA92A00BDB6CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F87F896B1F3DA92A00BDB6CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F87F896D1F3DA92A00BDB6CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F87F89721F3DA92A00BDB6CE /* YtChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YtChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87F89761F3DA92A00BDB6CE /* YtChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YtChartTests.m; sourceTree = "<group>"; };
+		F87F89781F3DA92A00BDB6CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F87F897D1F3DA92A00BDB6CE /* YtChartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YtChartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87F89811F3DA92A00BDB6CE /* YtChartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YtChartUITests.m; sourceTree = "<group>"; };
+		F87F89831F3DA92A00BDB6CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F87F898F1F3DACEC00BDB6CE /* YTPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPieChart.h; sourceTree = "<group>"; };
+		F87F89901F3DACEC00BDB6CE /* YTPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPieChart.m; sourceTree = "<group>"; };
+		F87F89921F3DAED400BDB6CE /* YTPieChartItemData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPieChartItemData.h; sourceTree = "<group>"; };
+		F87F89931F3DAED400BDB6CE /* YTPieChartItemData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPieChartItemData.m; sourceTree = "<group>"; };
+		F88FB4B91F5563E300E45FDC /* YjLineGenericChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YjLineGenericChart.h; sourceTree = "<group>"; };
+		F88FB4BA1F5563E300E45FDC /* YjLineGenericChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YjLineGenericChart.m; sourceTree = "<group>"; };
+		F88FB4BC1F56625B00E45FDC /* YjLineChartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YjLineChartItem.h; sourceTree = "<group>"; };
+		F88FB4BD1F56625B00E45FDC /* YjLineChartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YjLineChartItem.m; sourceTree = "<group>"; };
+		F88FB4BF1F57F4DC00E45FDC /* YjChartColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YjChartColor.h; sourceTree = "<group>"; };
+		F88FB4C01F57F4DC00E45FDC /* YjChartColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YjChartColor.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F87F89561F3DA92900BDB6CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F87F896F1F3DA92A00BDB6CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F87F897A1F3DA92A00BDB6CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F87F89501F3DA92900BDB6CE = {
+			isa = PBXGroup;
+			children = (
+				F87F895B1F3DA92900BDB6CE /* YtChart */,
+				F87F89751F3DA92A00BDB6CE /* YtChartTests */,
+				F87F89801F3DA92A00BDB6CE /* YtChartUITests */,
+				F87F895A1F3DA92900BDB6CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F87F895A1F3DA92900BDB6CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F87F89591F3DA92900BDB6CE /* YtChart.app */,
+				F87F89721F3DA92A00BDB6CE /* YtChartTests.xctest */,
+				F87F897D1F3DA92A00BDB6CE /* YtChartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F87F895B1F3DA92900BDB6CE /* YtChart */ = {
+			isa = PBXGroup;
+			children = (
+				F87F89951F3DAEF800BDB6CE /* Pie */,
+				F87F895F1F3DA92900BDB6CE /* AppDelegate.h */,
+				F87F89601F3DA92900BDB6CE /* AppDelegate.m */,
+				F87F89621F3DA92900BDB6CE /* ViewController.h */,
+				F87F89631F3DA92900BDB6CE /* ViewController.m */,
+				F87F89651F3DA92900BDB6CE /* Main.storyboard */,
+				F87F89681F3DA92A00BDB6CE /* Assets.xcassets */,
+				F87F896A1F3DA92A00BDB6CE /* LaunchScreen.storyboard */,
+				F87F896D1F3DA92A00BDB6CE /* Info.plist */,
+				F87F895C1F3DA92900BDB6CE /* Supporting Files */,
+			);
+			path = YtChart;
+			sourceTree = "<group>";
+		};
+		F87F895C1F3DA92900BDB6CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F87F895D1F3DA92900BDB6CE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F87F89751F3DA92A00BDB6CE /* YtChartTests */ = {
+			isa = PBXGroup;
+			children = (
+				F87F89761F3DA92A00BDB6CE /* YtChartTests.m */,
+				F87F89781F3DA92A00BDB6CE /* Info.plist */,
+			);
+			path = YtChartTests;
+			sourceTree = "<group>";
+		};
+		F87F89801F3DA92A00BDB6CE /* YtChartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F87F89811F3DA92A00BDB6CE /* YtChartUITests.m */,
+				F87F89831F3DA92A00BDB6CE /* Info.plist */,
+			);
+			path = YtChartUITests;
+			sourceTree = "<group>";
+		};
+		F87F89951F3DAEF800BDB6CE /* Pie */ = {
+			isa = PBXGroup;
+			children = (
+				F87F898F1F3DACEC00BDB6CE /* YTPieChart.h */,
+				F87F89901F3DACEC00BDB6CE /* YTPieChart.m */,
+				F87F89921F3DAED400BDB6CE /* YTPieChartItemData.h */,
+				F87F89931F3DAED400BDB6CE /* YTPieChartItemData.m */,
+				F88FB4B91F5563E300E45FDC /* YjLineGenericChart.h */,
+				F88FB4BA1F5563E300E45FDC /* YjLineGenericChart.m */,
+				F88FB4BC1F56625B00E45FDC /* YjLineChartItem.h */,
+				F88FB4BD1F56625B00E45FDC /* YjLineChartItem.m */,
+				F88FB4BF1F57F4DC00E45FDC /* YjChartColor.h */,
+				F88FB4C01F57F4DC00E45FDC /* YjChartColor.m */,
+			);
+			name = Pie;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F87F89581F3DA92900BDB6CE /* YtChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F87F89861F3DA92A00BDB6CE /* Build configuration list for PBXNativeTarget "YtChart" */;
+			buildPhases = (
+				F87F89551F3DA92900BDB6CE /* Sources */,
+				F87F89561F3DA92900BDB6CE /* Frameworks */,
+				F87F89571F3DA92900BDB6CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YtChart;
+			productName = YtChart;
+			productReference = F87F89591F3DA92900BDB6CE /* YtChart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F87F89711F3DA92A00BDB6CE /* YtChartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F87F89891F3DA92A00BDB6CE /* Build configuration list for PBXNativeTarget "YtChartTests" */;
+			buildPhases = (
+				F87F896E1F3DA92A00BDB6CE /* Sources */,
+				F87F896F1F3DA92A00BDB6CE /* Frameworks */,
+				F87F89701F3DA92A00BDB6CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F87F89741F3DA92A00BDB6CE /* PBXTargetDependency */,
+			);
+			name = YtChartTests;
+			productName = YtChartTests;
+			productReference = F87F89721F3DA92A00BDB6CE /* YtChartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F87F897C1F3DA92A00BDB6CE /* YtChartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F87F898C1F3DA92A00BDB6CE /* Build configuration list for PBXNativeTarget "YtChartUITests" */;
+			buildPhases = (
+				F87F89791F3DA92A00BDB6CE /* Sources */,
+				F87F897A1F3DA92A00BDB6CE /* Frameworks */,
+				F87F897B1F3DA92A00BDB6CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F87F897F1F3DA92A00BDB6CE /* PBXTargetDependency */,
+			);
+			name = YtChartUITests;
+			productName = YtChartUITests;
+			productReference = F87F897D1F3DA92A00BDB6CE /* YtChartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F87F89511F3DA92900BDB6CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = caohua;
+				TargetAttributes = {
+					F87F89581F3DA92900BDB6CE = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					F87F89711F3DA92A00BDB6CE = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F87F89581F3DA92900BDB6CE;
+					};
+					F87F897C1F3DA92A00BDB6CE = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F87F89581F3DA92900BDB6CE;
+					};
+				};
+			};
+			buildConfigurationList = F87F89541F3DA92900BDB6CE /* Build configuration list for PBXProject "YtChart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F87F89501F3DA92900BDB6CE;
+			productRefGroup = F87F895A1F3DA92900BDB6CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F87F89581F3DA92900BDB6CE /* YtChart */,
+				F87F89711F3DA92A00BDB6CE /* YtChartTests */,
+				F87F897C1F3DA92A00BDB6CE /* YtChartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F87F89571F3DA92900BDB6CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87F896C1F3DA92A00BDB6CE /* LaunchScreen.storyboard in Resources */,
+				F87F89691F3DA92A00BDB6CE /* Assets.xcassets in Resources */,
+				F87F89671F3DA92900BDB6CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F87F89701F3DA92A00BDB6CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F87F897B1F3DA92A00BDB6CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F87F89551F3DA92900BDB6CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87F89911F3DACEC00BDB6CE /* YTPieChart.m in Sources */,
+				F88FB4BB1F5563E300E45FDC /* YjLineGenericChart.m in Sources */,
+				F87F89941F3DAED400BDB6CE /* YTPieChartItemData.m in Sources */,
+				F87F89641F3DA92900BDB6CE /* ViewController.m in Sources */,
+				F87F89611F3DA92900BDB6CE /* AppDelegate.m in Sources */,
+				F88FB4C11F57F4DC00E45FDC /* YjChartColor.m in Sources */,
+				F88FB4BE1F56625B00E45FDC /* YjLineChartItem.m in Sources */,
+				F87F895E1F3DA92900BDB6CE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F87F896E1F3DA92A00BDB6CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87F89771F3DA92A00BDB6CE /* YtChartTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F87F89791F3DA92A00BDB6CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87F89821F3DA92A00BDB6CE /* YtChartUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F87F89741F3DA92A00BDB6CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F87F89581F3DA92900BDB6CE /* YtChart */;
+			targetProxy = F87F89731F3DA92A00BDB6CE /* PBXContainerItemProxy */;
+		};
+		F87F897F1F3DA92A00BDB6CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F87F89581F3DA92900BDB6CE /* YtChart */;
+			targetProxy = F87F897E1F3DA92A00BDB6CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F87F89651F3DA92900BDB6CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F87F89661F3DA92900BDB6CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F87F896A1F3DA92A00BDB6CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F87F896B1F3DA92A00BDB6CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F87F89841F3DA92A00BDB6CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F87F89851F3DA92A00BDB6CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F87F89871F3DA92A00BDB6CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = YtChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.caohua.YtChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		F87F89881F3DA92A00BDB6CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = YtChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.caohua.YtChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		F87F898A1F3DA92A00BDB6CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YtChartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.caohua.YtChartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YtChart.app/YtChart";
+			};
+			name = Debug;
+		};
+		F87F898B1F3DA92A00BDB6CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YtChartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.caohua.YtChartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YtChart.app/YtChart";
+			};
+			name = Release;
+		};
+		F87F898D1F3DA92A00BDB6CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YtChartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.caohua.YtChartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YtChart;
+			};
+			name = Debug;
+		};
+		F87F898E1F3DA92A00BDB6CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YtChartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.caohua.YtChartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YtChart;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F87F89541F3DA92900BDB6CE /* Build configuration list for PBXProject "YtChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87F89841F3DA92A00BDB6CE /* Debug */,
+				F87F89851F3DA92A00BDB6CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F87F89861F3DA92A00BDB6CE /* Build configuration list for PBXNativeTarget "YtChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87F89871F3DA92A00BDB6CE /* Debug */,
+				F87F89881F3DA92A00BDB6CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F87F89891F3DA92A00BDB6CE /* Build configuration list for PBXNativeTarget "YtChartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87F898A1F3DA92A00BDB6CE /* Debug */,
+				F87F898B1F3DA92A00BDB6CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F87F898C1F3DA92A00BDB6CE /* Build configuration list for PBXNativeTarget "YtChartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87F898D1F3DA92A00BDB6CE /* Debug */,
+				F87F898E1F3DA92A00BDB6CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F87F89511F3DA92900BDB6CE /* Project object */;
+}
