@@ -10,6 +10,7 @@
 #import "YjLineGenericChart.h"
 #import "YjLineChartItem.h"
 #import "YjBarChart.h"
+#import "YjBarChartItem.h"
 @interface ViewController ()
 @property (nonatomic, strong) YjLineGenericChart *lineChart;
 @property (nonatomic, strong) YjBarChart *barChart;
@@ -56,21 +57,35 @@
     self.barChart = [[YjBarChart alloc] initWithFrame:CGRectMake(10, 450, 400, 200)];
     _barChart.layer.borderColor = [UIColor orangeColor].CGColor;
     _barChart.layer.borderWidth = 1.0f;
+    _barChart.yAxisMaxValue = 40.f;
+    _barChart.yAxisMinValue = 0.f;
+    _barChart.xAxisLables = @[@"Mon",@"Tue",@"Web",@"Thu",@"Fn",@"Sat",@"Sun"];
     _barChart.yAxisLables = @[@"0\nmin",@"10\nmin",@"20\nmin",@"30\nmin",@"40\nmin"];
     [self.view addSubview:_barChart];
+    
+    YjBarChartItem *barItem1 = [[YjBarChartItem alloc] init];
+    barItem1.barData = @[@20,@10,@30.5,@5,@10,@40,@33];
+    barItem1.dataTitle = @"YjAdair";
+    
+    YjBarChartItem *barItem3 = [[YjBarChartItem alloc] init];
+    barItem3.barData = @[@5,@26,@40,@40,@35,@35,@33];
+    barItem3.fillColor = [UIColor brownColor];
+    barItem3.dataTitle = @"Snow";
+    
+    _barChart.chartData = @[barItem1,barItem3];
     [_barChart strokeChart];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
+
 //    if (_lineChart.chartMargin.left == 25.f) {
 //        _lineChart.chartMargin = YjChartMarginMake(30, 50, 30, 50);
 //    }else {
 //        _lineChart.chartMargin = YjChartMarginMake(25, 25, 25, 25);
 //    }
     
-    self.lineChart.frame = CGRectMake(10, 100, 300, 200);
-    [self.lineChart strokeChart];
+//    self.lineChart.frame = CGRectMake(10, 100, 300, 200);
+//    [self.lineChart strokeChart];
 //    self.lineChart.chartData.lastObject.pointData = @[@20,@10,@30.5,@5,@10,@40,@25.567,@8,@33,@15];
 //    [_lineChart updateChartDataWithChartItem:self.lineChart.chartData.lastObject];
     
@@ -106,6 +121,15 @@
 //        _lineChart.showXGridLine = NO;
 //        _lineChart.showYGridLine = YES;
 //    }
+
+    /********************** Bar **************************/
+//    NSArray *pathColors = @[[UIColor purpleColor],[UIColor brownColor],[UIColor blueColor]];
+//    for (NSInteger index = 0; index < self.barChart.chartData.count;index++ ) {
+//        YjBarChartItem *chartItem = self.barChart.chartData[index];
+//        chartItem.fillColor = pathColors[index];
+//    }
+    self.barChart.chartData.lastObject.barData = @[@30,@15,@5,@15,@0,@35,@38];
+    [_barChart updateChartDataWithBarItem:self.barChart.chartData.lastObject barIndex:self.barChart.chartData.count-1];
 }
 
 - (void)didReceiveMemoryWarning {

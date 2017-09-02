@@ -71,9 +71,4 @@
         node.pointText.foregroundColor = pointLabelColor.CGColor;
     }
 }
-
-- (void)setPointData:(NSArray *)pointData {
-    _pointData = pointData;
-    
-}
 @end

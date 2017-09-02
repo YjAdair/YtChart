@@ -32,7 +32,7 @@
 @interface YjLineChartItem : NSObject
 /** 元数据 **/
 @property (nonatomic, copy) NSArray *pointData;
-/** 元数据标题 **/
+/** 元数据组标题 **/
 @property (nonatomic, copy) NSString *dataTitle;
 /** pathColor **/
 @property (nonatomic, strong) UIColor *pathColor;

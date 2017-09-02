@@ -151,7 +151,6 @@ YjLineChartMargin YjChartMarginMake(CGFloat left, CGFloat top, CGFloat right, CG
         [module addSubview:dataIndicate];
         [self addSubview:module];
     }
-    
 }
 
 - (void)strokeLinePath {

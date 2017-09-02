@@ -21,6 +21,7 @@
 		F88FB4BE1F56625B00E45FDC /* YjLineChartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F88FB4BD1F56625B00E45FDC /* YjLineChartItem.m */; };
 		F88FB4C11F57F4DC00E45FDC /* YjChartColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F88FB4C01F57F4DC00E45FDC /* YjChartColor.m */; };
 		F88FB4C41F595B8E00E45FDC /* YjBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = F88FB4C31F595B8E00E45FDC /* YjBarChart.m */; };
+		F88FB4C71F5A42CE00E45FDC /* YjBarChartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F88FB4C61F5A42CE00E45FDC /* YjBarChartItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		F88FB4C01F57F4DC00E45FDC /* YjChartColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YjChartColor.m; sourceTree = "<group>"; };
 		F88FB4C21F595B8E00E45FDC /* YjBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YjBarChart.h; sourceTree = "<group>"; };
 		F88FB4C31F595B8E00E45FDC /* YjBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YjBarChart.m; sourceTree = "<group>"; };
+		F88FB4C51F5A42CE00E45FDC /* YjBarChartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YjBarChartItem.h; sourceTree = "<group>"; };
+		F88FB4C61F5A42CE00E45FDC /* YjBarChartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YjBarChartItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,8 @@
 				F88FB4C01F57F4DC00E45FDC /* YjChartColor.m */,
 				F88FB4C21F595B8E00E45FDC /* YjBarChart.h */,
 				F88FB4C31F595B8E00E45FDC /* YjBarChart.m */,
+				F88FB4C51F5A42CE00E45FDC /* YjBarChartItem.h */,
+				F88FB4C61F5A42CE00E45FDC /* YjBarChartItem.m */,
 			);
 			name = Pie;
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 			files = (
 				F87F89911F3DACEC00BDB6CE /* YTPieChart.m in Sources */,
 				F88FB4BB1F5563E300E45FDC /* YjLineGenericChart.m in Sources */,
+				F88FB4C71F5A42CE00E45FDC /* YjBarChartItem.m in Sources */,
 				F87F89941F3DAED400BDB6CE /* YTPieChartItemData.m in Sources */,
 				F87F89641F3DA92900BDB6CE /* ViewController.m in Sources */,
 				F88FB4C41F595B8E00E45FDC /* YjBarChart.m in Sources */,
